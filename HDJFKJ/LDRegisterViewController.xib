@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LDRegisterViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="LlQ-eE-3Of"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="u7" translatesAutoresizingMaskIntoConstraints="NO" id="06W-1r-gao" userLabel="背景Vimageiew">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGA-nO-C8P">
+                    <rect key="frame" x="487" y="510" width="100" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="RW4-uA-Kg0"/>
+                        <constraint firstAttribute="height" constant="50" id="nut-mu-4DS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="注册">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="registerButtonClick:" destination="-1" eventType="touchUpInside" id="i8G-kA-B5B"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMP-AV-4Tr">
+                    <rect key="frame" x="40" y="40" width="130" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="VDH-TN-jZz"/>
+                        <constraint firstAttribute="width" constant="130" id="mY9-bE-pKs"/>
+                    </constraints>
+                    <state key="normal" title="跳过">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="JumpButtonClick:" destination="-1" eventType="touchUpInside" id="5wL-72-VXC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVs-Xf-CRJ">
+                    <rect key="frame" x="13" y="510" width="100" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5f7-uc-JAG"/>
+                        <constraint firstAttribute="width" constant="100" id="rkr-0f-PBm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButtonClick:" destination="-1" eventType="touchUpInside" id="kPA-PR-0hX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="06W-1r-gao" secondAttribute="trailing" id="35k-Qp-B8W"/>
+                <constraint firstItem="06W-1r-gao" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8T7-4s-0KI"/>
+                <constraint firstItem="NVs-Xf-CRJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="Bvn-EI-sJd"/>
+                <constraint firstAttribute="bottom" secondItem="XGA-nO-C8P" secondAttribute="bottom" constant="40" id="D4q-Ra-aMq"/>
+                <constraint firstItem="lMP-AV-4Tr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="EPs-t7-Gum"/>
+                <constraint firstItem="lMP-AV-4Tr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="ETG-gL-jdi"/>
+                <constraint firstAttribute="bottom" secondItem="NVs-Xf-CRJ" secondAttribute="bottom" constant="40" id="VT0-Qj-5YY"/>
+                <constraint firstItem="06W-1r-gao" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VaG-04-7ip"/>
+                <constraint firstAttribute="trailing" secondItem="XGA-nO-C8P" secondAttribute="trailing" constant="13" id="kQo-wm-5bf"/>
+                <constraint firstAttribute="bottom" secondItem="06W-1r-gao" secondAttribute="bottom" id="w9a-FR-YWY"/>
+            </constraints>
+            <point key="canvasLocation" x="174" y="-219"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="u7" width="107" height="155"/>
+    </resources>
+</document>

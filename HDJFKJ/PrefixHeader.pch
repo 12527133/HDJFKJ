@@ -1,0 +1,127 @@
+//
+//  PrefixHeader.pch
+//  北京互动金服科技
+//
+//  Created by apple on 16/2/23.
+//  Copyright © 2016年 LDSmallCat. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#pragma mark - 调试
+
+#define NILSTR(x) (nil == (x) || [(x) length]<=0)?[NSNull null]:(x)
+#define NIL0STR(x) (nil == (x) || [(x) length]<=0)?@"0":(x)
+
+#define NULLSTR(x) (nil == (x) || [(x) length]<=0)?@"":(x)
+#define NULLOBJ(x) [NSString stringWithFormat:@"%@",(x)]
+#define WeakSelf __weak typeof(self) weakSelf = self;
+
+#pragma mark - 公共文件
+
+//新希望
+#define KBaseUrl @"http://60.205.122.224/hd-merchant-web/mobile/"
+
+/** 帮助中心 */
+#define helpCenterUrl @"http://60.205.122.224/"
+
+/** 注册协议 */
+#define registerUserUrl @"http://60.205.122.224/"
+
+/** 消费贷款申请书 */
+#define cashLoanUrl @"http://60.205.122.224/"
+
+/** 银行卡快捷支付服务协议 */
+#define bankPayUrl @"http://60.205.122.224/"
+
+/** 快捷支付服务协议 */
+#define kuanjiezhifuUlr @"http://60.205.122.224/"
+
+/** 用户租房协议 */
+#define zufangxieyiUrl @"http://60.205.122.224/"
+
+
+#import "LDUserInformation.h"
+#import "UIView+LDFrameExtension.h"
+#import "UIView+LDDFrameExtension.h"
+#import "UIBarButtonItem+LDNavBarItem.h"
+#import "SVProgressHUD.h"
+#import "UIBarButtonItem+LDExtension.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "LDNetworkTools.h"
+#import "MJExtension.h"
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import "Masonry.h"
+#import "MBProgressHUD+LD.h"
+#import "HDLoading.h"
+#import "LDGoodsIDAndZhuanAnId.h"
+#import "MBProgressHUD.h"
+#import "NSString+MXRegularExpression.h"
+#import "LDResponseModel.h"
+#import "LDBaseTableViewController.h"
+#import "LDBaseUIViewController.h"
+#import "WHTongJIRequest.h"
+#import "HDSubmitOrder.h"
+
+#pragma mark - DEBUG
+
+#ifdef DEBUG
+#define LDLog(...) NSLog(__VA_ARGS__)
+#else
+#define LDLog(...)
+#endif
+
+
+#define Is_Iphone5 (([UIScreen mainScreen].bounds.size.height == 568) ? YES : NO)
+#define Is_Iphone6 (([UIScreen mainScreen].bounds.size.height == 667) ? YES : NO)
+//375
+
+#define Is_Iphone6P (([UIScreen mainScreen].bounds.size.height == 736) ? YES : NO)
+#define Is_Iphone4 (([UIScreen mainScreen].bounds.size.height == 480) ? YES : NO)
+
+#pragma mark - 宏定义
+#define LDUUID [[UIDevice currentDevice] identifierForVendor]]
+
+#define LDBackroundColor [UIColor colorWithRed:236/255.0 green:236/255.0 blue:236/255.0 alpha:1]
+
+#define LDEnableColor [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1]
+#define LDDisEnableColor [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.5]
+#define LDLineColor [UIColor colorWithRed:188/255.0 green:186/255.0 blue:193/255.0 alpha:1]
+#define LDRGBColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+#define LDScreenBounds   [UIScreen mainScreen].bounds
+
+#define LDLogFunc LDLog(@"%s", __func__)
+#define LD17Font [UIFont systemFontOfSize:17]
+#define LD15Font [UIFont systemFontOfSize:15]
+#define LDViewFont [UIFont systemFontOfSize:15]
+#define LDPadding 13
+#define LDScreenWidth [UIScreen mainScreen].bounds.size.width
+#define LDScreenHeight [UIScreen mainScreen].bounds.size.height
+#define LDTextPadding 95
+#define LDTextHeight 45
+
+#define bili LDScreenWidth/375.0
+
+//归档存储搜索历史
+#define SearchHistory [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"SearchHistory.data"]
+//归档存储用户信息
+#define UserInfoDict [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"UserInfo.data"]
+//归档存储首页数据
+#define ShouYeInfoDict [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"ShouYe.data"]
+//归档存储定位地址数据
+#define LoacationArea [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"LoacationArea.data"]
+//存储后台接收到的消息数
+#define pushMsgCount [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"pushMsgCount.data"]
+//存储打回修改的订单类型
+#define LoanType [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"LoanType.data"]
+//存储大会修订单对应的商户ID
+#define AddressBook [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"AddressBook.data"]
+//
+
+//十六进制色织转换
+#define WHColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#endif /* PrefixHeader_pch */

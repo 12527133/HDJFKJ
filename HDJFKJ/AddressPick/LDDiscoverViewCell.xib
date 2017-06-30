@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< .mine
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+>>>>>>> .r1695
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="LDDiscoverViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="90.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GVi-Qk-Wg0">
+<<<<<<< .mine
+                        <rect key="frame" x="13" y="5" width="298" height="80.5"/>
+=======
+                        <rect key="frame" x="0.0" y="2" width="324" height="85.5"/>
+>>>>>>> .r1695
+                    </imageView>
+                </subviews>
+                <constraints>
+<<<<<<< .mine
+                    <constraint firstAttribute="trailing" secondItem="GVi-Qk-Wg0" secondAttribute="trailing" constant="13" id="3pV-uE-Ll8"/>
+                    <constraint firstItem="GVi-Qk-Wg0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="Fvo-3n-M3j"/>
+                    <constraint firstAttribute="bottom" secondItem="GVi-Qk-Wg0" secondAttribute="bottom" constant="5" id="jc6-uY-S7v"/>
+                    <constraint firstItem="GVi-Qk-Wg0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="nmt-5j-qSA"/>
+=======
+                    <constraint firstAttribute="trailing" secondItem="GVi-Qk-Wg0" secondAttribute="trailing" id="3pV-uE-Ll8"/>
+                    <constraint firstItem="GVi-Qk-Wg0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Fvo-3n-M3j"/>
+                    <constraint firstAttribute="bottom" secondItem="GVi-Qk-Wg0" secondAttribute="bottom" constant="3" id="jc6-uY-S7v"/>
+                    <constraint firstItem="GVi-Qk-Wg0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="nmt-5j-qSA"/>
+>>>>>>> .r1695
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconView" destination="GVi-Qk-Wg0" id="jfd-EC-wad"/>
+            </connections>
+            <point key="canvasLocation" x="206" y="176.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WHCashLoanScondView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oAk-ZE-6si">
+                    <rect key="frame" x="100" y="102.5" width="153" height="15"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.82745098039999998" green="0.2274509804" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Sxb-ys-HP4">
+                    <rect key="frame" x="250" y="13.5" width="60" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="12个月" backgroundImage="期数未选">
+                        <color key="titleColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="12个月" backgroundImage="期数选中.png">
+                        <color key="titleColor" red="0.82745098039999998" green="0.2274509804" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每期还款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tv1-54-zhX">
+                    <rect key="frame" x="13" y="102.5" width="60" height="15"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.019607843140000001" green="0.1058823529" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择期数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ksQ-HK-Dwv">
+                    <rect key="frame" x="13" y="17.5" width="60" height="15"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.019607843140000001" green="0.1058823529" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Ty-BR-vjb">
+                    <rect key="frame" x="100" y="12.5" width="60" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="6个月" backgroundImage="期数未选">
+                        <color key="titleColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="6个月" backgroundImage="期数选中.png">
+                        <color key="titleColor" red="0.82745098039999998" green="0.2274509804" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7tO-0T-cG3">
+                    <rect key="frame" x="175" y="12.5" width="60" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="9个月" backgroundImage="期数未选">
+                        <color key="titleColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="9个月" backgroundImage="期数选中.png">
+                        <color key="titleColor" red="0.82745098039999998" green="0.2274509804" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eih-nL-yMw">
+                    <rect key="frame" x="100" y="51.5" width="60" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="18个月" backgroundImage="期数未选">
+                        <color key="titleColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="18个月" backgroundImage="期数选中.png">
+                        <color key="titleColor" red="0.82745098039999998" green="0.2274509804" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cdC-g0-5T3">
+                    <rect key="frame" x="175" y="51" width="60" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="24个月" backgroundImage="期数未选">
+                        <color key="titleColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="24个月" backgroundImage="期数选中.png">
+                        <color key="titleColor" red="0.82745098039999998" green="0.2274509804" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8f6-6n-ZPh">
+                    <rect key="frame" x="250" y="51" width="60" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="36个月" backgroundImage="期数未选">
+                        <color key="titleColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="36个月" backgroundImage="期数选中.png">
+                        <color key="titleColor" red="0.82745098039999998" green="0.2274509804" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="6UK-h8-CdZ">
+                    <rect key="frame" x="0.0" y="129.5" width="375" height="0.5"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="XmP-be-6gu">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="JFt-HO-7h0">
+                    <rect key="frame" x="13" y="91" width="362" height="0.5"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avergMonthMontyLabel" destination="oAk-ZE-6si" id="l1F-OV-2Yv"/>
+                <outlet property="eighteenButton" destination="eih-nL-yMw" id="ERm-KR-iPl"/>
+                <outlet property="nineButton" destination="7tO-0T-cG3" id="AJj-VI-eVf"/>
+                <outlet property="sixButton" destination="7Ty-BR-vjb" id="1rK-Rq-owu"/>
+                <outlet property="thittysixButton" destination="8f6-6n-ZPh" id="ir2-id-U1w"/>
+                <outlet property="twelveButton" destination="Sxb-ys-HP4" id="hQ5-Am-TmP"/>
+                <outlet property="twentyfourButton" destination="cdC-g0-5T3" id="i5D-Ee-j06"/>
+            </connections>
+            <point key="canvasLocation" x="217.5" y="191"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="期数未选" width="60" height="25"/>
+        <image name="期数选中.png" width="60" height="25"/>
+    </resources>
+</document>

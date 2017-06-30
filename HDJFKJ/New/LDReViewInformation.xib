@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LDReViewInformation">
+            <connections>
+                <outlet property="inforTableView" destination="Fwv-Sr-wNm" id="woC-7p-EJL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ET-ht-75a">
+                    <frame key="frameInset" width="600" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ft4-ie-Ban">
+                            <frame key="frameInset" minY="10" width="600" height="54"/>
+                            <attributedString key="attributedText">
+                                <fragment content="审核信息">
+                                    <attributes>
+                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="17" name="STHeitiSC-Medium"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zi-B3-qNj">
+                            <frame key="frameInset" minX="21" minY="28" width="19" height="22"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="74e-4M-raL"/>
+                                <constraint firstAttribute="height" constant="30" id="HXE-CT-0bN"/>
+                            </constraints>
+                            <state key="normal" image="shenhe_arrow_down"/>
+                            <connections>
+                                <action selector="dismissButtonClick:" destination="-1" eventType="touchUpInside" id="YoV-6t-bWh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="407-nz-dfE"/>
+                        <constraint firstAttribute="bottom" secondItem="3Zi-B3-qNj" secondAttribute="bottom" constant="10" id="9LF-Rb-dZh"/>
+                        <constraint firstItem="Ft4-ie-Ban" firstAttribute="leading" secondItem="3ET-ht-75a" secondAttribute="leading" id="9eW-XU-8C7"/>
+                        <constraint firstAttribute="bottom" secondItem="Ft4-ie-Ban" secondAttribute="bottom" id="EB3-gW-uqf"/>
+                        <constraint firstAttribute="trailing" secondItem="Ft4-ie-Ban" secondAttribute="trailing" id="YB9-I4-Qib"/>
+                        <constraint firstItem="Ft4-ie-Ban" firstAttribute="top" secondItem="3ET-ht-75a" secondAttribute="top" constant="10" id="ewX-Mv-Ufg"/>
+                        <constraint firstItem="3Zi-B3-qNj" firstAttribute="leading" secondItem="3ET-ht-75a" secondAttribute="leading" constant="15" id="fHA-Wq-fnt"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fwv-Sr-wNm">
+                    <frame key="frameInset" minY="64" width="600" height="491"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lzX-tP-rKZ"/>
+                        <outlet property="delegate" destination="-1" id="Mm8-qD-4vI"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3E-Ap-zOB">
+                    <frame key="frameInset" minY="555" width="600" height="45"/>
+                    <color key="backgroundColor" red="0.25882352939999997" green="0.47450980390000003" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="fjH-ak-ADn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="提交审核">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="subMitReviewAllInfor:" destination="-1" eventType="touchUpInside" id="pMd-WU-Ksa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Fwv-Sr-wNm" firstAttribute="top" secondItem="3ET-ht-75a" secondAttribute="bottom" id="5eu-Y9-Ccg"/>
+                <constraint firstItem="3ET-ht-75a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="P9c-Hw-68M"/>
+                <constraint firstItem="X3E-Ap-zOB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Y4W-4L-jve"/>
+                <constraint firstAttribute="bottom" secondItem="X3E-Ap-zOB" secondAttribute="bottom" id="hbZ-7o-IkZ"/>
+                <constraint firstItem="X3E-Ap-zOB" firstAttribute="top" secondItem="Fwv-Sr-wNm" secondAttribute="bottom" id="ooN-DX-1MX"/>
+                <constraint firstItem="Fwv-Sr-wNm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oyp-oJ-0eq"/>
+                <constraint firstItem="3ET-ht-75a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="r8f-x8-6K5"/>
+                <constraint firstAttribute="trailing" secondItem="X3E-Ap-zOB" secondAttribute="trailing" id="ukc-u8-JG4"/>
+                <constraint firstAttribute="trailing" secondItem="3ET-ht-75a" secondAttribute="trailing" id="vd0-47-UCR"/>
+                <constraint firstAttribute="trailing" secondItem="Fwv-Sr-wNm" secondAttribute="trailing" id="yAg-8I-9GE"/>
+            </constraints>
+            <point key="canvasLocation" x="321" y="219"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shenhe_arrow_down" width="19" height="14"/>
+    </resources>
+</document>

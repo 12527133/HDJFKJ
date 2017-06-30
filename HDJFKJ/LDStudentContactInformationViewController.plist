@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>lableText</key>
+			<string>学校联系人姓名</string>
+			<key>textField</key>
+			<string></string>
+			<key>keyboardType</key>
+			<string>0</string>
+			<key>textFieldPlaceholder</key>
+			<string>学校联系人姓名</string>
+		</dict>
+		<dict>
+			<key>lableText</key>
+			<string>关系</string>
+			<key>textField</key>
+			<string></string>
+			<key>keyboardType</key>
+			<string>1</string>
+			<key>textFieldPlaceholder</key>
+			<string>关系</string>
+		</dict>
+		<dict>
+			<key>lableText</key>
+			<string>工作地点</string>
+			<key>textField</key>
+			<string></string>
+			<key>keyboardType</key>
+			<string>2</string>
+			<key>textFieldPlaceholder</key>
+			<string>省/市/县</string>
+		</dict>
+		<dict>
+			<key>lableText</key>
+			<string></string>
+			<key>textField</key>
+			<string></string>
+			<key>keyboardType</key>
+			<string>3</string>
+			<key>textFieldPlaceholder</key>
+			<string>街道/楼/门室</string>
+		</dict>
+		<dict>
+			<key>lableText</key>
+			<string>联系方式</string>
+			<key>textField</key>
+			<string></string>
+			<key>keyboardType</key>
+			<string>4</string>
+			<key>textFieldPlaceholder</key>
+			<string>联系方式</string>
+		</dict>
+	</array>
+</array>
+</plist>

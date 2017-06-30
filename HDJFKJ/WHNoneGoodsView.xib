@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WHNoneGoodsView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="无帐单" translatesAutoresizingMaskIntoConstraints="NO" id="5ER-IM-osz">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="VIv-31-eMM"/>
+                        <constraint firstAttribute="height" constant="80" id="cdw-8y-yN3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未搜索到商品" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkX-Ug-WZ4">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="2yl-qT-ila"/>
+                        <constraint firstAttribute="width" constant="144" id="byw-1d-Wwa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赶快去逛一下吧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLU-UY-YAQ">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="BKh-I8-sOu"/>
+                        <constraint firstAttribute="width" constant="100" id="pCt-hW-rTg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.6470588235294118" green="0.6470588235294118" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QkX-Ug-WZ4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3cB-2c-Z2E"/>
+                <constraint firstItem="QkX-Ug-WZ4" firstAttribute="top" secondItem="5ER-IM-osz" secondAttribute="bottom" constant="8" id="FXQ-BO-hbc"/>
+                <constraint firstItem="QkX-Ug-WZ4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IkC-y0-tSR"/>
+                <constraint firstItem="5ER-IM-osz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RzG-7b-ina"/>
+                <constraint firstItem="fLU-UY-YAQ" firstAttribute="top" secondItem="QkX-Ug-WZ4" secondAttribute="bottom" constant="8" id="UlL-gb-O0E"/>
+                <constraint firstItem="fLU-UY-YAQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="e7d-Pm-A1f"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="TishiLabel" destination="QkX-Ug-WZ4" id="dre-Mf-qvS"/>
+            </connections>
+            <point key="canvasLocation" x="247" y="309"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="无帐单" width="80" height="80"/>
+    </resources>
+</document>

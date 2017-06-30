@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LDTaoBaoVC">
+            <connections>
+                <outlet property="BottomFirstButton" destination="Qbi-6o-wz4" id="9gg-15-GoV"/>
+                <outlet property="boottomView" destination="WuS-JD-HvB" id="J1J-en-bSg"/>
+                <outlet property="headerView" destination="ko6-ne-JIi" id="p9Y-kn-d2w"/>
+                <outlet property="middleTableView" destination="iDh-uj-Elp" id="uhq-eh-dAf"/>
+                <outlet property="navView" destination="nTf-yv-4AQ" id="iK3-Qd-L7C"/>
+                <outlet property="sureButton" destination="Qbi-6o-wz4" id="S6F-Oa-2a8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="iDh-uj-Elp">
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="ko6-ne-JIi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Trd-QL-lA3"/>
+                        <outlet property="delegate" destination="-1" id="8N2-c7-J7h"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WuS-JD-HvB">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbi-6o-wz4">
+                            <color key="backgroundColor" red="0.25882352939999997" green="0.47450980390000003" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="确认分期">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickFirstButton:" destination="-1" eventType="touchUpInside" id="WgJ-sd-1p4"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="1VC-Oj-Rsc"/>
+                        <constraint firstItem="Qbi-6o-wz4" firstAttribute="leading" secondItem="WuS-JD-HvB" secondAttribute="leading" id="Gli-LF-kHq"/>
+                        <constraint firstAttribute="bottom" secondItem="Qbi-6o-wz4" secondAttribute="bottom" id="Q7v-zN-PU9"/>
+                        <constraint firstItem="Qbi-6o-wz4" firstAttribute="top" secondItem="WuS-JD-HvB" secondAttribute="top" id="VBL-8m-ibP"/>
+                        <constraint firstAttribute="trailing" secondItem="Qbi-6o-wz4" secondAttribute="trailing" id="qNx-ZB-tGo"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTf-yv-4AQ">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5M-VN-KGk">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="d58-79-6bn"/>
+                            </constraints>
+                            <state key="normal" image="返回-拷贝-4"/>
+                            <connections>
+                                <action selector="navButtonClick:" destination="-1" eventType="touchUpInside" id="WlX-7d-qWF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="o5M-VN-KGk" firstAttribute="top" secondItem="nTf-yv-4AQ" secondAttribute="top" constant="27" id="Cmo-4p-F70"/>
+                        <constraint firstAttribute="bottom" secondItem="o5M-VN-KGk" secondAttribute="bottom" constant="7" id="Xqv-Cf-VZT"/>
+                        <constraint firstItem="o5M-VN-KGk" firstAttribute="leading" secondItem="nTf-yv-4AQ" secondAttribute="leading" constant="15" id="s96-jj-wTk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WuS-JD-HvB" secondAttribute="bottom" id="0et-68-fMx"/>
+                <constraint firstItem="WuS-JD-HvB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7cY-EY-2ge"/>
+                <constraint firstItem="WuS-JD-HvB" firstAttribute="top" secondItem="iDh-uj-Elp" secondAttribute="bottom" id="9iU-bZ-Ebj"/>
+                <constraint firstAttribute="trailing" secondItem="iDh-uj-Elp" secondAttribute="trailing" id="E7t-mp-HzX"/>
+                <constraint firstAttribute="trailing" secondItem="WuS-JD-HvB" secondAttribute="trailing" id="Eda-7l-ukO"/>
+                <constraint firstAttribute="trailing" secondItem="nTf-yv-4AQ" secondAttribute="trailing" id="J3S-xM-6Sh"/>
+                <constraint firstItem="iDh-uj-Elp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="O9d-VJ-nt9"/>
+                <constraint firstItem="iDh-uj-Elp" firstAttribute="top" secondItem="nTf-yv-4AQ" secondAttribute="bottom" id="YI3-mV-FGk"/>
+                <constraint firstItem="nTf-yv-4AQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZOD-nT-wOr"/>
+                <constraint firstItem="nTf-yv-4AQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lap-Nk-N4K"/>
+                <constraint firstItem="iDh-uj-Elp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pRz-AS-o2X"/>
+            </constraints>
+            <point key="canvasLocation" x="437.5" y="-114.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="返回-拷贝-4" width="30" height="30"/>
+    </resources>
+</document>

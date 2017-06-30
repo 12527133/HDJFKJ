@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SoreDown" rowHeight="162" id="KGk-i7-Jjw" customClass="LDMyScoreDown">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shouji" translatesAutoresizingMaskIntoConstraints="NO" id="G9W-UU-WTm" userLabel="DownLeftImage">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="52" id="8vm-O2-ICx"/>
+                            <constraint firstAttribute="width" constant="57" id="KeH-me-xZM"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="shouyefanhui_2.0.4" translatesAutoresizingMaskIntoConstraints="NO" id="2V8-Un-SPv">
+                        <frame key="frameInset" minX="295" minY="35.5" width="10" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="Z6C-nK-ZwC"/>
+                            <constraint firstAttribute="height" constant="19" id="q6r-ia-OdJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身份证信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdM-Ni-lGa">
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.16862745098039217" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未完善" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sid-cH-RoJ">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.080000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zF-Ur-F2j" userLabel="line">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="iso-88-tPB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="G9W-UU-WTm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="2cd-FY-Mxa"/>
+                    <constraint firstItem="G9W-UU-WTm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="5UQ-dK-Dpl"/>
+                    <constraint firstItem="0zF-Ur-F2j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="J5x-Oi-oxB"/>
+                    <constraint firstItem="Sid-cH-RoJ" firstAttribute="leading" secondItem="G9W-UU-WTm" secondAttribute="trailing" constant="17" id="LgT-gv-ISS"/>
+                    <constraint firstItem="EdM-Ni-lGa" firstAttribute="leading" secondItem="G9W-UU-WTm" secondAttribute="trailing" constant="17" id="Nfx-gS-b4C"/>
+                    <constraint firstItem="Sid-cH-RoJ" firstAttribute="top" secondItem="EdM-Ni-lGa" secondAttribute="bottom" constant="6" id="ObM-pK-at4"/>
+                    <constraint firstAttribute="trailing" secondItem="2V8-Un-SPv" secondAttribute="trailing" constant="15" id="YSl-Iq-B98"/>
+                    <constraint firstAttribute="trailing" secondItem="0zF-Ur-F2j" secondAttribute="trailing" id="aSE-U8-ge4"/>
+                    <constraint firstAttribute="bottom" secondItem="0zF-Ur-F2j" secondAttribute="bottom" id="bhe-jh-dzz"/>
+                    <constraint firstItem="2V8-Un-SPv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eHH-Fl-NWh"/>
+                    <constraint firstItem="2V8-Un-SPv" firstAttribute="leading" secondItem="EdM-Ni-lGa" secondAttribute="trailing" constant="10" id="eWi-8g-b1f"/>
+                    <constraint firstItem="EdM-Ni-lGa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="iri-D9-ASG"/>
+                    <constraint firstItem="2V8-Un-SPv" firstAttribute="leading" secondItem="Sid-cH-RoJ" secondAttribute="trailing" constant="5" id="nPq-Be-6dU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="isCompleted" destination="Sid-cH-RoJ" id="6yU-3J-iPF"/>
+                <outlet property="leftImage" destination="G9W-UU-WTm" id="Lny-Aw-4WF"/>
+                <outlet property="line" destination="0zF-Ur-F2j" id="o96-5V-Zpx"/>
+                <outlet property="whichInfor" destination="EdM-Ni-lGa" id="eYu-bX-lDK"/>
+            </connections>
+            <point key="canvasLocation" x="-10" y="34"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shouji" width="50" height="50"/>
+        <image name="shouyefanhui_2.0.4" width="10" height="18"/>
+    </resources>
+</document>
